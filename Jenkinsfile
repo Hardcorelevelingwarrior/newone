@@ -35,7 +35,7 @@ podTemplate(yaml: '''
 ''') {
   node(POD_LABEL) {
     stage('Get the project') {
-      git url: 'https://github.com/Hardcorelevelingwarrior/simple-java-maven-app.git', branch: 'master'
+      git url: 'https://github.com/Hardcorelevelingwarrior/newone.git', branch: 'main'
     stage("Image to container"){
         container('maven'){
             stage('Deploy to K8s') {
