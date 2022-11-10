@@ -50,10 +50,10 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: \"false\"
 spec:
   rules:
-    http:
+  - http:
       paths:
-      - pathType: Prefix
-        path: /spring-boot-demo
+      - path: /spring-boot-demo
+        pathType: Prefix
         backend:
           service:
             name: spring-boot-demo
