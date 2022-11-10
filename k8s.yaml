@@ -32,10 +32,10 @@ metadata:
   name: spring-boot-demo
 spec:
   ports:
-  - name: 8080-8080
-    port: 8080
+  - name: 8083-8083
+    port: 8083
     protocol: TCP
-    targetPort: 8080
+    targetPort: 8083
   selector:
     app: spring-boot-demo
   type: LoadBalancer
